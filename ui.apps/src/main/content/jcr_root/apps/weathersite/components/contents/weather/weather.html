@@ -1,0 +1,14 @@
+<div data-emptytext="Edit ${component.title}" class="cq-placeholder" data-sly-test=${wcmmode.edit}></div>
+
+<div class="weather-container" data-city-name="${properties.cityName}" data-resource-path="${resource.path}">
+    <section class="ajax-section">
+        <div class="container">
+            <ul class="cities">
+
+            </ul>
+        </div>
+    </section>
+</div>
+
+<sly data-sly-use.clientlib="/apps/weathersite/clientlibextension/templates/clientlib.html"/>
+<sly data-sly-call="${clientlib.jsPageBottom @ categories='weathersite.weather'}"/>

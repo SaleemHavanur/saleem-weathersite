@@ -1,0 +1,7 @@
+#base=js
+
+bootstrap.bundle.min.js
+bootstrap.min.js
+jquery-3.6.0.min.js
+popper.min.js
+weatherpage.js

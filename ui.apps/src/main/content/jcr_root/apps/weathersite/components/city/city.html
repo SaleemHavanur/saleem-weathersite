@@ -1,0 +1,9 @@
+<sly data-sly-use.authoringUtils="/libs/wcm/foundation/components/utils/AuthoringUtils.js"
+     data-sly-use.testmodel="com.icf.weathersite.core.models.CityModel">
+    <h1>Ground water level</h1>
+    <div data-sly-test="${testmodel.undergroundwaterlevel}" data-sly-list="${testmodel.undergroundwaterlevel}">
+        <p>City: ${item.cityname}</p>
+        <p>Min Water Level: ${item.minwaterlevel}</p>
+        <p>Max Water Level: ${item.maxwaterlevel}</p>
+    </div>
+</sly>
